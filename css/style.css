@@ -13,6 +13,11 @@ body {
     margin: 0;
     background-color: hsl(216, 12%, 8%);
     color: hsl(217, 12%, 63%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -29,13 +34,6 @@ p {
 
 /* Rating state start */
 
-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 main .rating-container,
 main .thank-you-container {
     background-color: hsl(213, 19%, 18%);
@@ -46,6 +44,10 @@ main .thank-you-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+main .rating-container.hide {
+    display: none;
 }
 
 main .rating {
@@ -76,12 +78,12 @@ main .rating li:not(:last-child) {
 }
 
 main .rating li:hover {
-    background-color: hsl(217, 12%, 63%);
+    background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-main .rating li:active {
-    background-color: hsl(25, 97%, 53%);
+main .rating li.active {
+    background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
 
@@ -110,7 +112,6 @@ main .submit:hover {
 main .thank-you-container {
     width: 390px;
     text-align: center;
-    display: none;
 }
 
 main .image {
