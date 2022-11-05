@@ -37,6 +37,11 @@ main .rating-container {
     background-color: hsl(213, 19%, 18%);
     border-radius: 20px;
     padding: 0 25px;
+    width: 400px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main .rating {
