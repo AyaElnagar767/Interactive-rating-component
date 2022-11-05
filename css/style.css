@@ -77,4 +77,10 @@ main .submit {
     border-radius: 20px;
     letter-spacing: 2px;
 }
+
+@media (max-width: 425px) {
+    main .rating-container {
+        width: 92vw;
+    }
+}
 /* Rating state end */
