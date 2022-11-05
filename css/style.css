@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 /* start general styles */
+
 *,
 *::before,
 *::after {
@@ -23,9 +24,11 @@ p {
     font-size: 15px;
     margin: 0;
 }
+
 /* end general styles */
 
 /* Rating state start */
+
 main {
     min-height: 100vh;
     display: flex;
@@ -43,10 +46,6 @@ main .thank-you-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-main .rating-container {
-    display: none;
 }
 
 main .rating {
@@ -104,17 +103,14 @@ main .submit:hover {
     color: hsl(25, 97%, 53%);
 }
 
-@media (max-width: 425px) {
-    main .rating-container {
-        width: 92vw;
-    }
-}
 /* Rating state end */
 
 /* Thank you state start */
+
 main .thank-you-container {
     width: 390px;
     text-align: center;
+    display: none;
 }
 
 main .image {
@@ -134,4 +130,12 @@ main .user-select {
     justify-content: center;
     margin: 0 auto;
 }
+
+@media (max-width: 425px) {
+    main .rating-container,
+    main .thank-you-container {
+        width: 92vw;
+    }
+}
+
 /* Thank you state end */
