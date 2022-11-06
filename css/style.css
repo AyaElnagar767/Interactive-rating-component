@@ -124,8 +124,8 @@ main .user-select {
     border-radius: 20px;
     box-shadow: 0 3px 3px  #232C35,
     0 -3px 3px  #232C35;
-    height: 30px;
-    width: 50%;
+    height: 35px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +136,19 @@ main .user-select {
     main .rating-container,
     main .thank-you-container {
         width: 92vw;
+    }
+
+    main .rating {
+        justify-content: space-between;
+    }
+
+    main .rating li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    main .img, main .rating li {
+        width: 12vw;
+        height: 12vw;
     }
 }
 
